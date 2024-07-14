@@ -1,0 +1,98 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h3 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header h3 a:hover {
+    color: #ff6347;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.intro {
+    background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.intro h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 18px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+.service {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.service img {
+    max-width: 100%;
+    height: auto;
+}
+
+.service h2 {
+    margin: 20px 0;
+    color: #333;
+}
+
+.service p {
+    color: #666;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+    }
+
+    .service {
+        margin: 10px 0;
+    }
+}
