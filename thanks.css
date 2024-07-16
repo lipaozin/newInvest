@@ -69,7 +69,7 @@
     transform: scale(0.95);
   }
   button a{
-
+    text-decoration: none;
     color: black;
    }
   

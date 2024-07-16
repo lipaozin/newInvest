@@ -57,7 +57,6 @@ nav {
 
 
 .nav-links li a{
-   /* margin-left: 1rem;*/
     transition: 0.8s ease;
     display: flex;
     padding: 5px;
@@ -147,10 +146,10 @@ section {
 }
 
 .home-section {
-    background: url('https://source.unsplash.com/1600x900/?real-estate') no-repeat center center/cover;
-    color: white;
+  font-size: large;
+    color: black;
     padding: 6rem 2rem;
-    background: url(img/back.jpg);
+    background-color: rgba(172, 255, 47, 0.63);
     background-size: cover;
 }
 
@@ -272,229 +271,28 @@ section {
 }
 
 
-button {
-    cursor: pointer;
-    font-weight: 700;
-    font-family: Helvetica,"sans-serif";
-    padding: 10px 20px;
-    background: aliceblue;
-    border: 1px solid transparent;
-    align-items: center;
-    font-size: 15px;
-    margin-top: 20px;
-    transition: 1.7s ease;
-    display: flex;
-    justify-content: center;
-  }
-  
-  button > svg {
-    width: 34px;
-    margin-left: 10px;
-    transition: transform .3s ease-in-out;
-  }
-  
-  button:hover svg {
-    transform: translateX(5px);
-  }
-  
-  button:active {
-    transform: scale(0.95);
-  }
-  button a{
 
-    color: black;
-   }
-  
-
-
-
-
-  .container-button:active {
-    transform: scale(0.95);
-
-  }
-  
-  .hover {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 200;
-  }
-  
-  .bt-1 {
-    grid-area: bt-1;
-  }
-  
-  .bt-2 {
-    grid-area: bt-2;
-  }
-  
-  .bt-3 {
-    grid-area: bt-3;
-  }
-  
-  .bt-4 {
-    grid-area: bt-4;
-  }
-  
-  .bt-5 {
-    grid-area: bt-5;
-  }
-  
-  .bt-6 {
-    grid-area: bt-6;
-  }
-  
-  .bt-1:hover ~ button {
-    transform: rotateX(15deg) rotateY(-15deg) rotateZ(0deg);
-    box-shadow: -2px -2px #18181888;
-  }
-  
-  .bt-1:hover ~ button::after {
-    animation: shake 0.5s ease-in-out 0.3s;
-    text-shadow: -2px -2px #18181888;
-  }
-  
-  .bt-3:hover ~ button {
-    transform: rotateX(15deg) rotateY(15deg) rotateZ(0deg);
-    box-shadow: 2px -2px #18181888;
-  }
-  
-  .bt-3:hover ~ button::after {
-    animation: shake 0.5s ease-in-out 0.3s;
-    text-shadow: 2px -2px #18181888;
-  }
-  
-  .bt-4:hover ~ button {
-    transform: rotateX(-15deg) rotateY(-15deg) rotateZ(0deg);
-    box-shadow: -2px 2px #18181888;
-  }
-  
-  .bt-4:hover ~ button::after {
-    animation: shake 0.5s ease-in-out 0.3s;
-    text-shadow: -2px 2px #18181888;
-  }
-  
-  .bt-6:hover ~ button {
-    transform: rotateX(-15deg) rotateY(15deg) rotateZ(0deg);
-    box-shadow: 2px 2px #18181888;
-  }
-  
-  .bt-6:hover ~ button::after {
-    animation: shake 0.5s ease-in-out 0.3s;
-    text-shadow: 2px 2px #18181888;
-  }
-  
-  .hover:hover ~ button::before {
-    background: transparent;
-  }
-  
-  .hover:hover ~ button::after {
-    content: "Click";
-    top: -150%;
-    transform: translate(-50%, 0);
-    font-size: 34px;
-    color: #f19c2b;
-  }
-  
-
+/* Estilização do Botão de enviar*/ 
 
 button {
-  padding: 17px 40px;
-  border-radius: 10px;
-  border: 0;
-  background-color: rgb(255, 56, 86);
-  letter-spacing: 1.5px;
-  font-size: 15px;
-  transition: all 0.3s ease;
-  box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
-  color: hsl(0, 0%, 100%);
+  margin-top: 20px;
+  width: 150px;
+  height: 60px;
+  border: 3px solid #315cfd;
+  border-radius: 45px;
+  transition: all 0.6s;
   cursor: pointer;
+  background: white;
+  font-size: 1.2em;
+  font-weight: 550;
+  font-family: 'Montserrat', sans-serif;
 }
 
 button:hover {
-  box-shadow: rgb(201, 46, 70) 0px 7px 0px 0px;
+
+  font-size: 1.3em;
+  background-color: rgba(172, 255, 47, 0.63);
 }
-
-button:active {
-  background-color: rgb(255, 56, 86);
-  /*50, 168, 80*/
-  box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
-  transform: translateY(5px);
-  transition: 200ms;
-}
-
-
-
-  /*.button {
-    position: absolute;
-    padding: 0;
-    width: 135px;
-    height: 47px;
-    background: transparent;
-    font-size: 17px;
-    font-weight: 900;
-    border: 3px solid #f39923;
-    border-radius: 12px;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .button::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 135px;
-    height: 47px;
-    background-color: #f5ae51;
-    border-radius: 12px;
-    transition: all 0.3s ease-in-out;
-    z-index: -1;
-  }
-  
-  .button::after {
-    content: "Hover";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 135px;
-    height: 47px;
-    background-color: transparent;
-    font-size: 17px;
-    font-weight: 900;
-    line-height: 47px;
-    color: #ffffff;
-    border: none;
-    border-radius: 12px;
-    transition: all 0.3s ease-in-out;
-    z-index: 2;
-  }
-  
-  @keyframes shake {
-    0% {
-      left: 45%;
-    }
-  
-    25% {
-      left: 54%;
-    }
-  
-    50% {
-      left: 48%;
-    }
-  
-    75% {
-      left: 52%;
-    }
-  
-    100% {
-      left: 50%;
-    }
-  }
-
-
 
 
 /* Responsividade */
