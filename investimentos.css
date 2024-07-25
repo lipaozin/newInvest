@@ -20,7 +20,7 @@ header h3 a {
 }
 
 header h3 a:hover {
-    color: #ff6347;
+    color: #4dff47;
 }
 
 .container {
@@ -30,7 +30,7 @@ header h3 a:hover {
 }
 
 .intro {
-    background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+    background-image: url(img/PorquinhoBackground.png);
     color: #fff;
     text-align: center;
     padding: 100px 20px;
@@ -61,7 +61,7 @@ header h3 a:hover {
 }
 
 .service img {
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
 }
 

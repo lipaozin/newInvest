@@ -149,7 +149,7 @@ section {
   font-size: large;
     color: black;
     padding: 6rem 2rem;
-    background-color: rgba(172, 255, 47, 0.63);
+    background-color: rgba(167, 170, 163, 0.63);
     background-size: cover;
 }
 
@@ -278,7 +278,7 @@ button {
   margin-top: 20px;
   width: 150px;
   height: 60px;
-  border: 3px solid #315cfd;
+  border: 3px solid #315dfd96;
   border-radius: 45px;
   transition: all 0.6s;
   cursor: pointer;
@@ -290,8 +290,7 @@ button {
 
 button:hover {
 
-  font-size: 1.3em;
-  background-color: rgba(172, 255, 47, 0.63);
+  background-color: rgba(167, 170, 163, 0.842);
 }
 
 
