@@ -6,6 +6,7 @@
     <title>CDB</title>
     
     <link rel="stylesheet" href="investimentos.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
@@ -26,7 +27,7 @@
             <div class="service">
                 <img src="img/Cifrao.avif" alt="CBD">
                 <h2>Maiores Rentabilidades</h2>
-                <p>Aqui você encontrará as melhores opções de rentabilidade referente ao CDB.</p>
+                <p>Aqui você encontrará as informações para as melhores opções de rentabilidade referente ao CDB.</p>
             </div>
             <div class="service">
                 <img src="img/apertodemão.avif" alt="Desenvolvimento Web">
@@ -41,10 +42,50 @@
         </section>
     </div>
 
+    <div class="containerInfoCDB">
+        <section class="infoCDB">
+            <h2>
+                O CDB é um título de renda fixa emitido por bancos e instituições financeiras. Funciona como um empréstimo que o investidor faz ao banco. Em troca, 
+                o banco se compromete a devolver o valor aplicado acrescido de juros em uma data futura. A remuneração pode ser prefixada, pós-fixada ou híbrida.
+            </h2>
+            <h2>
+                A rentabilidade do CDB em 2024 irá depender da porcentagem do CDI, percentual que pode ser de 90%, 100%, 102%, ou seja, inúmeras variações. Em julho de 2024, a remuneração do CDB (Certificado de Depósito Bancário) está elevada porque a Taxa Selic está em 10,50% e o investimento é atrelado ao CDI (Certificado de Depósito Interbancário), que chegou a 10,40%. 
+
+    Já no CDB pré-fixado, a rentabilidade é definida no momento do contrato e não está indexado a nenhum índice.
+            </h2>
+            <canvas id="cdbChart" width="400" height="200"></canvas>
+        </section>
+    </div>
+
     <footer>
         <div class="container">
             <p>&copy; 2024 Agência Criativa. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <script>
+        
+        const ctx = document.getElementById('cdbChart').getContext('2d');
+        const cdbChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['2019', '2020', '2021', '2022', '2023'],
+                datasets: [{
+                    label: 'Rendimento do CDB',
+                    data: [6.5, 5.2, 7.8, 9.1, 10.4], // Substitua estes valores pelos dados reais
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 </html>
