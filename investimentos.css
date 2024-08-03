@@ -10,43 +10,107 @@ header {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    position: relative;
 }
 
-header h3 a {
+header .back-button {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+header .back-button:hover {
+    background-color: #45a049;
+    transform: translateY(-50%) scale(1.05);
+}
+
+header h1 a {
     color: #fff;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 35px;
     font-weight: bold;
 }
 
-header h3 a:hover {
+header h1 a:hover {
     color: #4dff47;
 }
-
 
 .container {
     width: 80%;
     margin: 0 auto;
     overflow: hidden;
 }
-.containerInfoCDB .infoCDB{
-    width: 77%;
-    margin: 0 auto;
-    background-color: lightgray;
+.container .h1 a{
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerInfoCDB .infoCDB {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
     padding: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-.containerInfoCDB .infoCDB h2{
-    
-    display: flex;
-    justify-content: center;
-    text-indent: 3rem;
+
+.containerInfoCDB .infoCDB h2 {
     text-align: justify;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #b9b7b7d0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.inputs label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.inputs input, .inputs button {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.inputs input:focus, .inputs button:focus {
+    outline: none;
+    border-color: #4dff47;
+}
+
+.inputs button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.inputs button:hover {
+    background-color: #45a049;
 }
 
 .intro {
-    background-color: rgba(255, 166, 0, 0.603);
+    background-color: rgba(34, 194, 114, 0.603);
     color: #fff;
     text-align: center;
     padding: 100px 20px;
@@ -71,27 +135,8 @@ header h3 a:hover {
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    text-align: center;
-    flex: 1;
-    margin: 0 10px;
-    border-radius: 30px;
+    text-align:
 }
-
-.service img {
-    max-width: 75%;
-    height: auto;
-}
-
-.service h2 {
-    margin: 20px 0;
-    color: #333;
-}
-
-.service p {
-    color: #666;
-    font-size: 16px;
-}
-
 footer {
     background-color: #333;
     color: #fff;
@@ -102,14 +147,4 @@ footer {
 
 footer p {
     margin: 0;
-}
-
-@media (max-width: 768px) {
-    .services {
-        flex-direction: column;
-    }
-
-    .service {
-        margin: 10px 0;
-    }
 }
