@@ -44,9 +44,10 @@ header h1 a:hover {
 }
 
 .container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
+
 }
 .container .h1 a{
     display: flex;
@@ -54,7 +55,7 @@ header h1 a:hover {
 }
 
 .containerInfoCDB .infoCDB {
-    width: 80%;
+    width: 70%;
     margin: 20px auto;
     background-color: #fff;
     padding: 20px;
@@ -135,7 +136,7 @@ header h1 a:hover {
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    text-align:
+    border-left: 20px;
 }
 footer {
     background-color: #333;
